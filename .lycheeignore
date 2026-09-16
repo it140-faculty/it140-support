@@ -1,0 +1,4 @@
+# GitHub's signup endpoint can return HTTP 403 to automated CI requests even
+# though the page is valid for end users. Keep this exception narrow rather
+# than accepting all 403 responses.
+^https://github\.com/signup(?:[/?#].*)?$

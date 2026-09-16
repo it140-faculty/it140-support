@@ -9,7 +9,6 @@ The repository provides guidance for:
 * [Faculty](faculty/README.md)
 * [Academic Support](academic-support/README.md)
 * [Learning Support Specialists (LSS)](lss/README.md)
-* [Academic Advisors](advisors/README.md)
 * [IT Service Desk personnel](service-desk/README.md)
 
 > [!IMPORTANT]
@@ -20,7 +19,8 @@ The repository provides guidance for:
 ---
 
 * **Course**: IT 140 - *Introduction to Scripting*
-* **Repository Purpose**: 
+* **Repository Purpose**: Provide canonical shared course-support information and role-/service-specific support procedures for IT 140
+* * **Primary Audience**: SNHU faculty and staff who support IT 140, including faculty, Academic Support personnel, LSS, academic advisors, and IT Service Desk personnel
 * **Repository Version**: 1.0.4
 * **Repository Version DTG**: 2026-09-07-14-30a
 
@@ -50,8 +50,6 @@ Role- and support-area documentation:
 | --- | --- | --- |
 | Faculty | [Faculty Support Guide](faculty/README.md) | Teaching, student support, course workflow, assignment support, and escalation |
 | Academic Support | [Academic Support for IT 140](academic-support/README.md) | Selecting among tutoring, LSS workshops/office hours, coaching, written feedback, and English-language support |
-| Learning Support Specialists (LSS) | [LSS Support Guide](lss/README.md) | IT 140-focused learning support, workshops, office hours, course tools, resource development, and escalation |
-| Academic Advisors | [Advisor Support Guide](advisors/README.md) | Course expectations, preparation and planning, common student concerns, technology context, and referrals |
 | IT Service Desk | [Service Desk Triage and Escalation Runbook](service-desk/README.md) | Technical triage, diagnostics, safe remediation, evidence collection, and escalation |
 
 ## Scope
@@ -75,16 +73,19 @@ For graded assignments and projects:
 | Module Three assignment | [GC-STEM/it140-m3-assignment](https://github.com/GC-STEM/it140-m3-assignment) |
 | Module Four assignment | [GC-STEM/it140-m4-assignment](https://github.com/GC-STEM/it140-m4-assignment) |
 | Projects One and Two and Module Six Milestone | [GC-STEM/it140-projects](https://github.com/GC-STEM/it140-projects) |
+| Course Support | [it140-support](https://github.com/it140-faculty/it140-support) |
 
 ## Repository Structure
 
 ```text
 it140-support/
 ├── README.md
+│
 ├── .github/
 │   ├── CHANGELOG.md
 │   └── images/
-├── shared/
+│
+── shared/
 │   ├── README.md
 │   ├── course-overview.md
 │   ├── course-repository-architecture.md
@@ -94,10 +95,21 @@ it140-support/
 │   ├── github-workflow.md
 │   ├── support-boundaries.md
 │   └── escalation-model.md
+│
 ├── academic-support/
 │   ├── README.md
 │   ├── tutoring.md
-│   └── coaching.md
+│   ├── coaching.md
+│   └── lss/
+│       ├── README.md
+│       ├── orientation-and-familiarization.md
+│       ├── workshops-and-office-hours.md
+│       ├── learning-support-and-integrity.md
+│       ├── github-and-course-tools.md
+│       ├── resource-development.md
+│       ├── referrals-and-escalation.md
+│       └── common-scenarios.md
+│
 ├── faculty/
 │   ├── README.md
 │   ├── start-of-term.md
@@ -107,23 +119,7 @@ it140-support/
 │   ├── github-and-repositories.md
 │   ├── technical-issues-and-escalation.md
 │   └── common-scenarios.md
-├── lss/
-│   ├── README.md
-│   ├── orientation-and-familiarization.md
-│   ├── workshops-and-office-hours.md
-│   ├── learning-support-and-integrity.md
-│   ├── github-and-course-tools.md
-│   ├── resource-development.md
-│   ├── referrals-and-escalation.md
-│   └── common-scenarios.md
-├── advisors/
-│   ├── README.md
-│   ├── course-expectations.md
-│   ├── course-planning-and-preparation.md
-│   ├── technology-context.md
-│   ├── student-concerns.md
-│   ├── referrals-and-routing.md
-│   └── common-scenarios.md
+│
 └── service-desk/
     ├── README.md
     ├── triage.md
@@ -230,11 +226,3 @@ Ongoing maintenance should focus on:
 * adding sanitized screenshots only where they materially improve a support procedure;
 * keeping restricted routing, queue, contact, and workflow details in the appropriate SNHU internal systems rather than this public repository; and
 * updating canonical course facts and linked role procedures as the IT 140 environment evolves.
-
-## Repository Metadata
-
-* **Course**: IT 140 - *Introduction to Scripting*
-* **Repository Name**: IT 140 Support
-* **Primary Audience**: SNHU faculty and staff who support IT 140, including faculty, Academic Support personnel, LSS, academic advisors, and IT Service Desk personnel
-* **Repository Purpose**: Provide canonical shared course-support information and role-/service-specific support procedures for IT 140
-* **Development Status**: Operational Documentation / Ongoing Maintenance

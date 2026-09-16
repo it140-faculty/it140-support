@@ -1,0 +1,25 @@
+# External Markdown-link validation.
+#
+# Check only HTTP(S) URLs. Relative repository links are handled by the
+# internal-link job.
+
+verbose = "info"
+no_progress = true
+
+scheme = ["http", "https"]
+include_fragments = "none"
+include_mail = false
+skip_missing = false
+
+# Be reasonably tolerant of transient network/rate-limit behavior without
+# treating authorization errors such as 403 as valid links.
+accept = ["200..=299", "429"]
+timeout = 30
+max_retries = 3
+retry_wait_time = 2
+max_concurrency = 8
+host_concurrency = 2
+method = ["head", "get"]
+
+# CI should never try to reach local/private-network addresses.
+exclude_all_private = true

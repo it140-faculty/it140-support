@@ -1,0 +1,16 @@
+# Internal Markdown-link validation.
+#
+# Network access is disabled. HTTP(S) URLs are excluded so this job focuses on
+# repository-relative files, directories, and Markdown anchor fragments.
+
+verbose = "info"
+no_progress = true
+offline = true
+include_fragments = "anchor-only"
+include_mail = false
+skip_missing = false
+
+# Keep network URLs out of the internal-only check.
+exclude = [
+  '^https?://',
+]
